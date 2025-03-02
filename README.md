@@ -1,3 +1,5 @@
+<img src='https://github.com/Developer-Harsh/Walkie-Talkie/blob/master/graphics/cover.png?raw=true'>
+
 # Walkie-Talkie Application 🎙️📡  
 
 Welcome, developers and GitHub visitors!  
