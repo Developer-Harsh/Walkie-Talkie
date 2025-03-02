@@ -1,12 +1,12 @@
 <img src='https://github.com/Developer-Harsh/Walkie-Talkie/blob/master/graphics/cover.png?raw=true'>
 
 <div align="center">
-    <img src="https://github.com/Developer-Harsh/Walkie-Talkie/blob/master/graphics/splash%20-%20tw.png" alt="Splash Screen" height="300" />
-    <img src="https://github.com/Developer-Harsh/Walkie-Talkie/blob/master/graphics/onboard%20-%20tw.png" alt="Onboard Screen" height="300" />
-    <img src="https://github.com/Developer-Harsh/Walkie-Talkie/blob/master/graphics/main%20-%20tw.png" alt="Home Screen" height="300" />
-    <img src="https://github.com/Developer-Harsh/Walkie-Talkie/blob/master/graphics/text%20-%20tw.png" alt="Text Message" height="300" />
-    <img src="https://github.com/Developer-Harsh/Walkie-Talkie/blob/master/graphics/video%20-%20tw.png" alt="Video Message" height="300" />
-    <img src="https://github.com/Developer-Harsh/Walkie-Talkie/blob/master/graphics/voice%20-%20tw.png" alt="Voice Message" height="300" />
+    <img src="https://github.com/Developer-Harsh/Walkie-Talkie/blob/master/graphics/splash%20-%20tw.png" alt="Splash Screen" height="550" />
+    <img src="https://github.com/Developer-Harsh/Walkie-Talkie/blob/master/graphics/onboard%20-%20tw.png" alt="Onboard Screen" height="550" />
+    <img src="https://github.com/Developer-Harsh/Walkie-Talkie/blob/master/graphics/main%20-%20tw.png" alt="Home Screen" height="550" />
+    <img src="https://github.com/Developer-Harsh/Walkie-Talkie/blob/master/graphics/text%20-%20tw.png" alt="Text Message" height="550" />
+    <img src="https://github.com/Developer-Harsh/Walkie-Talkie/blob/master/graphics/video%20-%20tw.png" alt="Video Message" height="550" />
+    <img src="https://github.com/Developer-Harsh/Walkie-Talkie/blob/master/graphics/voice%20-%20tw.png" alt="Voice Message" height="550" />
 </div>
 
 # Walkie-Talkie Application 🎙️📡  
