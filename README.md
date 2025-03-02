@@ -83,6 +83,9 @@ WebRTC facilitates **SFU (Selective Forwarding Unit) streaming**, where a single
 - **Version Control:** Git  
 - **Code Editor:** VS Code
 
+### 🔹 **App-Backend Networking**  
+- **API Used** Ktor API  
+
 ## 🤝 Contributions Welcome!  
 We **welcome contributions** to this repository! 🎉 If you're interested in improving the project, feel free to:  
 - **Submit issues** for bugs or feature requests.  
