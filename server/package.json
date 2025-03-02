@@ -1,0 +1,20 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "this is server for our application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "http": "^0.0.1-security",
+    "mongoose": "^8.10.0",
+    "node-pre-gyp": "^0.17.0",
+    "socket.io": "^4.8.1",
+    "wrtc": "^0.4.7"
+  }
+}

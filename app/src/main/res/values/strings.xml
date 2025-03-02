@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Walkie-Talkie</string>
+    <string name="title_activity_received">ReceivedActivity</string>
+    <string name="session_offline">Offline</string>
+    <string name="session_impossible">Second peer is missing</string>
+    <string name="session_ready">Ready to start session</string>
+    <string name="session_creating">Creating session</string>
+    <string name="session_active">Session Active</string>
+
+    <string name="button_start_session">Start session</string>
+    <string name="button_join_session">Join session</string>
+
+    <string name="button_end_session">End Session</string>
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "747247126976",
+    "project_id": "walttalkie",
+    "storage_bucket": "walttalkie.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:747247126976:android:f05c157de4d56822896025",
+        "android_client_info": {
+          "package_name": "com.harsh.walkie_talkie"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChx5NaPU0QVIzgK_qrG1hQhsFkkCjLF7s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
