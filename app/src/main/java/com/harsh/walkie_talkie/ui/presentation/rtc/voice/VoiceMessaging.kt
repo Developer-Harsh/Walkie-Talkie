@@ -1,8 +1,6 @@
 package com.harsh.walkie_talkie.ui.presentation.rtc.voice
 
 import android.os.Build
-import android.util.Log
-import android.webkit.ConsoleMessage
 import android.webkit.PermissionRequest
 import android.webkit.WebChromeClient
 import android.webkit.WebView

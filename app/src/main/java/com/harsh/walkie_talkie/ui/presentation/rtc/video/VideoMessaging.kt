@@ -2,8 +2,6 @@ package com.harsh.walkie_talkie.ui.presentation.rtc.video
 
 import android.annotation.SuppressLint
 import android.os.Build
-import android.util.Log
-import android.webkit.ConsoleMessage
 import android.webkit.PermissionRequest
 import android.webkit.WebChromeClient
 import android.webkit.WebSettings

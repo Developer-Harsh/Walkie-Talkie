@@ -29,6 +29,7 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.rememberModalBottomSheetState
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -53,13 +54,13 @@ import com.harsh.walkie_talkie.service.FloatingService
 import com.harsh.walkie_talkie.service.INTENT_COMMAND
 import com.harsh.walkie_talkie.ui.theme.LOW_OPACITY_WHITE
 import com.harsh.walkie_talkie.ui.theme.WHITE
-import com.harsh.walkie_talkie.util.PreferencesHelper
 
 @RequiresApi(Build.VERSION_CODES.UPSIDE_DOWN_CAKE)
 @Composable
 fun PermissionControl() {
-    var btnLabel by remember { mutableStateOf("") }
+
     var isShow by remember { mutableStateOf(false) }
+    var btnLabel by remember { mutableStateOf("") }
 
     val permissions = rememberMultiplePermissionsState(
         permissions = listOf(
@@ -67,11 +68,19 @@ fun PermissionControl() {
             Manifest.permission.RECORD_AUDIO,
             Manifest.permission.POST_NOTIFICATIONS,
             Manifest.permission.FOREGROUND_SERVICE,
+            Manifest.permission.FOREGROUND_SERVICE_SPECIAL_USE,
         )
     )
 
-    if (isShow)
-        ShowOverlayPermission { isShow = false }
+    LaunchedEffect(Unit) {
+        if (!permissions.allPermissionsGranted) isShow = true
+    }
+
+    if (isShow) {
+        ShowOverlayPermission {
+            isShow = false
+        }
+    }
 
     Row(
         modifier = Modifier
@@ -147,9 +156,11 @@ fun ShowOverlayPermission(onDismiss: () -> Unit) {
         sheetState = modalBottomSheetState,
         dragHandle = { },
     ) {
-        Box(modifier = Modifier
-            .fillMaxWidth()
-            .wrapContentHeight()) {
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .wrapContentHeight()
+        ) {
             Image(
                 painter = painterResource(R.drawable.background),
                 modifier = Modifier
@@ -230,13 +241,14 @@ fun ShowOverlayPermission(onDismiss: () -> Unit) {
                                 if (isIgnoringBatteryOptimizations(context))
                                     requestBatteryOptimization(context)
                                 else if (!Settings.canDrawOverlays(context)) {
-                                    context.startActivity(Intent(
-                                        Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
-                                        Uri.parse("package:" + context.packageName)
-                                    ))
+                                    context.startActivity(
+                                        Intent(
+                                            Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
+                                            Uri.parse("package:" + context.packageName)
+                                        )
+                                    )
                                 } else {
                                     onDismiss()
-                                    PreferencesHelper.setSettled(context, true)
                                 }
                             } else {
                                 permissions.launchMultiplePermissionRequest()

@@ -14,6 +14,7 @@ server/.env
 .DS_Store
 /app/build
 /build
+/app/google-services.json
 /captures
 .externalNativeBuild
 .cxx

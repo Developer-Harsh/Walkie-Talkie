@@ -118,20 +118,18 @@ fun AddContactSheet(
                                     Toast.LENGTH_SHORT
                                 ).show()
                             else
-                                scope.launch {
-                                    val response = ApiService().getProfile(id.text)
-
-                                    if (response.success == null)
+                                ApiService().getFirebase(id.text, context) { profile, message ->
+                                    if (message == "Not Found")
                                         Toast.makeText(
                                             context,
-                                            response.error.toString(),
+                                            "Profile not found!!",
                                             Toast.LENGTH_SHORT
                                         ).show()
                                     else {
                                         user = User(
                                             name = "",
-                                            uid = response.success.uid,
-                                            token = response.success.token
+                                            uid = profile!!.uid,
+                                            token = profile.token
                                         )
                                         onDismiss(user, true)
                                     }

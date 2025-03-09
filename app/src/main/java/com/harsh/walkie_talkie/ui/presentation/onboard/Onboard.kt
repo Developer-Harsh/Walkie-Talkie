@@ -54,7 +54,7 @@ fun OnboardScreen(navHostController: NavHostController) {
                 SwipeToStartButton(modifier = Modifier.padding(top = 60.dp), onSwipeComplete = {
                     navHostController.navigate(Pages.Home.route)
                     scope.launch {
-                        ApiService().saveProfile(context = context)
+                        ApiService().saveFirebase(context = context)
                         navHostController.navigate(Pages.Home.route)
                     }
                 })
